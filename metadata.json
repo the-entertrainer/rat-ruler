@@ -1,0 +1,6 @@
+{
+  "name": "The Rat Ruler",
+  "description": "Subterranean rodent civilization strategy game powered by a scientific ethology, sociobiology, and emergent evolution simulation engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

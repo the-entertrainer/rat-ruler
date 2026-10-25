@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cinzel', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #120b07;
+  }
+
+  img, canvas {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono, .tabular-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.pixel-panel {
+  box-shadow: inset 0 2px 0 rgba(255, 224, 150, 0.2), 0 4px 0 #090503;
+}
+
+.pixel-button {
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.28), 0 3px 0 #090503;
+}
+
+.pixel-button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 0 #090503;
+}
+
+/* Custom subtle scrollbars for subterranean panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #140c08;
+}
+::-webkit-scrollbar-thumb {
+  background: #6b4628;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9c683b;
+}
